@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+    
+    centos_container:
+        build:
+            dockerfile: Dockerfile
+        ports:
+            - "8081:8081"
+        
+            
+    mysql_container:
+        build:
+            dockerfile: Dockerfile-mysql
+        ports:
+            - "3306:3306"
